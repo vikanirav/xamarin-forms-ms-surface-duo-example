@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/MSSurfaceDuoDemo/MSSurfaceDuoDemo/bin/Debug/netstandard2.0
+/MSSurfaceDuoDemo/MSSurfaceDuoDemo/obj
+/MSSurfaceDuoDemo/MSSurfaceDuoDemo.Android/bin/Debug
+/MSSurfaceDuoDemo/MSSurfaceDuoDemo.Android/obj
+/.vs/MSSurfaceDuoDemo/v16

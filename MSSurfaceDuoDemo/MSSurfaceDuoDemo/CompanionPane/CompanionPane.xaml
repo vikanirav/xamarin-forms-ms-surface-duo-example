@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:dualscreen="clr-namespace:Xamarin.Forms.DualScreen;assembly=Xamarin.Forms.DualScreen"
+             x:Class="MSSurfaceDuoDemo.CompanionPane.CompanionPane"
+             BackgroundColor="LightGray"
+             Visual="Material">
+
+    <dualscreen:TwoPaneView x:Name="twoPaneView" MinWideModeWidth="4000" MinTallModeHeight="4000">
+        <dualscreen:TwoPaneView.Pane1>
+            <ListView x:Name="listview" BackgroundColor="LightGray" RowHeight="100" ItemSelected="listview_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame Margin="20" BackgroundColor="White">
+                                <Label FontSize="Medium" Text="{Binding ., StringFormat='Item {0}'}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </dualscreen:TwoPaneView.Pane1>
+        <dualscreen:TwoPaneView.Pane2>
+            <Frame BackgroundColor="LightGray" Padding="0" Margin="0" 
+                           WidthRequest="{Binding Source={x:Reference twoPaneView}, Path=Pane1.Width}"
+                           HeightRequest="{Binding Source={x:Reference twoPaneView}, Path=Pane1.Height}">
+                <Frame Margin="20" BackgroundColor="White">
+                    <Label x:Name="selectedItem" FontSize="Large" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                </Frame>
+            </Frame>
+        </dualscreen:TwoPaneView.Pane2>
+    </dualscreen:TwoPaneView>
+</ContentPage>
