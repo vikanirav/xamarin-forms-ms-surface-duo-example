@@ -1,6 +1,8 @@
 # xamarin-forms-ms-surface-duo-example
 This is an example of Xamarin forms based android application for Microsoft surface duo - dual screen device.
 
+Article Link: https://www.c-sharpcorner.com/article/microsoft-surface-duo-setup-and-xamarin-forms-based-android-application-example/
+
 Microsoft Surface Duo Setup and Xamarin Forms based android application Example
 
 1.	What is Microsoft surface duo?
@@ -10,47 +12,47 @@ For more information about: https://docs.microsoft.com/en-us/dual-screen/introdu
 
 2.	What do you need to start working with Surface Duo?
 
-•	Get latest version visual studio
+  •	Get latest version visual studio
 
-•	Xamarin must be install
+  •	Xamarin must be install
 
-•	Android SDK must be install
+  •	Android SDK must be install
 
-•	Surface duo emulator, Surface Duo SDK (https://www.microsoft.com/en-us/download/details.aspx?id=100847)
+  •	Surface duo emulator, Surface Duo SDK (https://www.microsoft.com/en-us/download/details.aspx?id=100847)
 
 3.	What is system requirement for Surface Duo SDK?
 
-•	Windows OS 8/10 (32- or 64-bit)
+  •	Windows OS 8/10 (32- or 64-bit)
 
-•	4 GB of RAM minimum, 8 GB of RAM recommended
+  •	4 GB of RAM minimum, 8 GB of RAM recommended
 
-•	The Surface Duo preview image requires an Android Emulator to be installed with Visual Studio (Xamarin)
+  •	The Surface Duo preview image requires an Android Emulator to be installed with Visual Studio (Xamarin)
 
 
 4.	How to install Surface Duo SDK?
 
-•	Download the Surface Duo SDK from given link and install it
+  •	Download the Surface Duo SDK from given link and install it
 
-•	You will get SDK icon on your desktop after successfully installation of SDK.
+  •	You will get SDK icon on your desktop after successfully installation of SDK.
 
-•	Default installation location : “%USERPROFILE%\SurfaceDuoEmulator”
+  •	Default installation location : “%USERPROFILE%\SurfaceDuoEmulator”
 
-•	Open the “artifacts” folder inside of the installation folder.
+  •	Open the “artifacts” folder inside of the installation folder.
 
-•	Open the file “run.bat” in a text editor.
+  •	Open the file “run.bat” in a text editor.
 
-•	Check ANDROID_SDK_LOCATION path value on the top of the file is correct or not. Default ANDROID_SDK_LOCATION location path: “C:\Program Files (x86)\Android\android-sdk”
+  •	Check ANDROID_SDK_LOCATION path value on the top of the file is correct or not. Default ANDROID_SDK_LOCATION location path:       “C:\Program Files (x86)\Android\android-sdk”
 
-•	For more information: Install Surface Duo SDK
+  •	For more information: Install Surface Duo SDK
 
 
 5.	How to open Surface Duo emulator?
 
-•	Double click on Surface duo emulator icon which is available on your desktop after successfully installation of SDK
+  •	Double click on Surface duo emulator icon which is available on your desktop after successfully installation of SDK
  
 6.	How to span your app in Surface duo?
 
-To span your app in the Surface duo emulator, drag the app from the white bar at the bottom of the app screen in the middle of the emulator. When the background turns white in both screens, drop the app.
+To span your app in the Surface duo emulator, drag the app from the white bar at the bottom of the app screen in the middle of the   emulator. When the background turns white in both screens, drop the app.
  
 7.	Start With Xamarin forms based android application
 
@@ -61,20 +63,20 @@ I have made this example of various dual screen design patterns. There are 5 typ
   4.	Dual view
   5.	Companion Pane
 
-•	Required nugget packages
+  •	Required nugget packages
 
-    o	Xamarin.Forms.DualScreen (For Xamarin forms based application)
-    o	Xamarin.DuoSdk (For Xamarin.Android project)
+     o	Xamarin.Forms.DualScreen (For Xamarin forms based application)
+     o	Xamarin.DuoSdk (For Xamarin.Android project)
     
-•	Create Xamarin forms application with android project
+  •	Create Xamarin forms application with android project
 
-•	Install Xamarin.Forms.DualScreen nugget package in all project
+  •	Install Xamarin.Forms.DualScreen nugget package in all project
 
-•	You can also install Xamarin.DuoSdk nuget package in Xamarin.Android project, If you want to know that device is dual screen device or normal single screen device.
+  •	You can also install Xamarin.DuoSdk nuget package in Xamarin.Android project, If you want to know that device is dual screen device or normal single screen device.
 
-•	Need to initialize dual screen device service and need add to layout configuration in your MainActivity of Xamarin.Android project
+  •	Need to initialize dual screen device service and need add to layout configuration in your MainActivity of Xamarin.Android project
 
-•	You need to add Xamarin.DuoSdk in Xamarin.Android project, if you want to know that device is dual screen device or normal single screen mobile device.
+  •	You need to add Xamarin.DuoSdk in Xamarin.Android project, if you want to know that device is dual screen device or normal single screen mobile device.
 
  
 8.	How to check app is in dual screen or single screen?
