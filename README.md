@@ -13,7 +13,7 @@ For more information about: https://docs.microsoft.com/en-us/dual-screen/introdu
 •	Get latest version visual studio
 •	Xamarin must be install
 •	Android SDK must be install
-•	Surface duo emulator, Surface Duo SDK (DownLoad the SDK from here)
+•	Surface duo emulator, Surface Duo SDK (https://www.microsoft.com/en-us/download/details.aspx?id=100847)
 
 3.	What is system requirement for Surface Duo SDK?
 
